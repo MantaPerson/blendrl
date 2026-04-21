@@ -4,3 +4,5 @@ left_to_diver(X):-right_of_diver(P,D),visible_diver(D),not_full_divers(X).
 right_to_diver(X):-left_of_diver(P,D),visible_diver(D),not_full_divers(X).
 up_to_diver(X):-deeper_than_diver(P,D),visible_diver(D),not_full_divers(X).
 down_to_diver(X):-higher_than_diver(P,D),visible_diver(D),not_full_divers(X).
+shoot_enemy_left(X):-right_of_enemy(P,E),visible_enemy(E),facing_left(P),same_depth_enemy(P,E).
+shoot_enemy_right(X):-left_of_enemy(P,E),visible_enemy(E),facing_right(P),same_depth_enemy(P,E).

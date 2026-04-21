@@ -21,3 +21,5 @@ down_true:1:image
 down_false:1:image
 neural_agent:1:image
 logic_agent:1:image
+shoot_enemy_right:1:image
+shoot_enemy_left:1:image
